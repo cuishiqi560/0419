@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>给你的诗歌</title>
+    <style type="text/css">
+
+
+        @keyframes myfirst {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 100;
+            }
+        }
+        p,h1{animation: myfirst 8s infinite;
+        font-size:100px;
+            color:yellow;
+        }
+        html{
+            background-image: url(恐怖机器人.gif);}
+
+    </style>
+</head>
+<body>
+<h1>沧海一声笑</h1>
+<p>滔滔两岸潮</p>
+<audio src="qfl.mp3" id="v" controls autoplay></audio><br>
+<button onclick="fastfoward();">fast word</button>
+<button onclick="alert('11111');">按就出1</button>
+<button onclick="slowfoward();">slow foward</button>
+<button onclick="currenttime();">currenttime</button>
+<script>
+    function fastfoward(){
+        v.playbackRate=1.2*v.playbackRate;
+    }
+    function slowfoward(){
+        v.playbackRate=0.8*v.playbackRate;
+    }
+    function currenttime(){
+        v.currentTime=50.5;
+    }
+</script>
+</audio>
+</body>
+</html>
