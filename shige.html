@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+    <style type="text/css">
+        body{
+            background-image:url("./恐怖机器人.gif");
+            background-size:100% 100%;
+
+        }
+        html{
+            height:100%
+        }
+        p{
+            color:yellow;
+            background:blueviolet ;
+            font-size:50px;
+            position:absolute; opacity: width:100%;
+            text-align: center;
+            animation:suibian 1s infinite;
+        ;
+        }
+        @keyframes suibian {
+            0%{opacity: 100 }
+            20%{opacity: 0 }
+            40%{opacity:0 }
+            60%{opacity: 0 }
+            80%{opacity: 0 }
+            100{opacity:0}
+        }
+        @keyframes suibian1 {
+            0%{opacity: 0 }
+            20%{opacity:0}
+            40%{opacity:100}
+            60%{opacity:0}
+            80%{opacity:0}
+            100%{opacity:0}
+        }
+        @keyframes suibian2 {
+            0%{opacity: 0 }
+            20%{opacity:0}
+            40%{opacity:0}
+            60%{opacity:0}
+            80%{opacity:100}
+            100%{opacity:0}
+        }
+        #s{
+            animation:suibian 3s infinite;
+        }
+        #d{
+            animation:suibian1 3s infinite;
+        }
+        #y{
+            animation:suibian2 3s infinite;
+        }
+    </style>
+</head>
+<body>
+
+<p id="s">山阻石拦</p>
+<p id="d">大江依旧东流去</p>
+<p id="y">氧气焊</p>
+</body>
+</html>
